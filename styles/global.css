@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    --blue: #3485FF;
+    --red: #E83F5B;
+    --dark-blue: #0D114F;
+    --white: #FAFAFA;
+    --light-blue: #E0ECFF;
+    --background: #F6FAFF;
+    --overlay: #040911;
+    --icons-details: #A5B0C1;
+    --dark-grey: #4D5E77;
+    --blue-grey: #A1B2CD;
+    --light-grey: #E5EAF1;
+
+    font-size: 62.5%; /* 10px */
+}
+
+/* REMOVE INPUT ARROWS - Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* REMOVE INPUT ARROWS - Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input:focus {
+    outline: none;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: var(--background);
+}
+
+
+body, button, input, textarea {
+    font-size: clamp(14px, 1.6rem, 2vw);
+    font-family: 'Opens Sans', sans-serif;
+}
+
+.content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+button, input, .button {
+    border-radius: .8rem;
+    height: 5rem;
+}
+
+.sr-only {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+    transition: filter .2s;
+}
+
+button:hover, .button:hover {
+    filter: brightness(1.2);
+}
+
+button > img, .button > img {
+    margin-right: 1rem;
+    width: 2rem;
+}
+
+button.outlined, .button.outlined {
+    background: var(--white);
+    color: var(--blue);
+    border: .2rem solid var(--blue);
+} 
+
+.content header {
+    width: 80%;
+    margin: 3.5rem auto;
+}
+
+.content header img {
+    width: 16.7rem;
+}
