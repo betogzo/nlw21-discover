@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/create-pass.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/85bc3ec381.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&display=swap" rel="stylesheet"> 
     <title>Rocket.Q</title>
 </head>
@@ -26,8 +28,11 @@
             <section>
                 <h2>Crie sua prória sala</h2>
                 <form action="#">
-                    <label class="sr-only" for="room-pass">Insira uma senha</label>
-                    <input type="password" id="room-pass" placeholder="Insira uma senha">
+                  <div class="input-div">
+                      <label class="sr-only" for="room-pass">Insira uma senha</label>
+                      <input type="password" id="room-pass" placeholder="Insira uma senha">
+                      <i class="far fa-eye-slash eye" title="Mostrar senha" onclick="passReveal()"></i>
+                    </div>
                     <button><img src="assets/users-white.svg" alt="Entrar na sala">Criar Sala</button>
                 </form>
             </section>
@@ -36,5 +41,10 @@
         </div>
       </main>
     </div>
+    <script src="/js/pass-reveal.js"></script>
 </body>
 </html>
+
+<!-- <label class="sr-only" for="room-pass">Insira uma senha</label>
+                    <input type="password" id="room-pass" placeholder="Insira uma senha">
+                    <button><img src="assets/users-white.svg" alt="Entrar na sala">Criar Sala</button> -->

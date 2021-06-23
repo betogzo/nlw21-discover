@@ -1,0 +1,30 @@
+input {
+    border: none;
+    background: transparent;
+}
+
+.input-div {
+    display: flex;
+    border-radius: .8rem;
+    height: 5rem;
+    outline: none;
+    font-size: clamp(14px, 1.6rem, 2vw);
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Open Sans', sans-serif;
+    border: .2rem solid var(--grey-blue);
+    margin-bottom: 2rem;
+    
+}
+
+.input-div > i {
+    color: var(--grey-blue);
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+
+#room-pass {
+    padding-top: 1.6rem;
+    padding-left: -0.5rem;
+}
