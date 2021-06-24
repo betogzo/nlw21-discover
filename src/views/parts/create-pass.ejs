@@ -1,0 +1,14 @@
+            <!-- <link rel="stylesheet" href="styles/create-pass.css">  -->
+            <section>
+              <h2>Crie sua prória sala</h2>
+              <form action="/create-room" method="POST">
+                <div class="input-div">
+                  <label class="sr-only" for="room-pass">Insira uma senha</label>
+                  <input type="password" name="password" id="room-pass" placeholder="Insira uma senha">
+                  <i class="far fa-eye-slash eye" title="Mostrar senha" onclick="passReveal()"></i>
+                </div>
+                <button><img src="/images/users-white.svg" alt="Entrar na sala">Criar Sala</button>
+              </form>
+            </section>
+            
+            <script src="/scripts/pass-reveal.js"></script>
