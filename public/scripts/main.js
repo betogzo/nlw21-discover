@@ -36,4 +36,3 @@ function handleClick(event, check = true) {
     check ? modalButton.classList.remove('red') : modalButton.classList.add('red');
     modal.open();
 }
-

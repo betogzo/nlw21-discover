@@ -93,6 +93,31 @@
 } 
 
 /* questions */
+.no-msg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.no-msg h2 {
+    color: var(--black);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+    margin-top: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.no-msg p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: var(--grey-blue);
+}
+
 .question-wrapper {
     background: var(--light-blue);
     margin-bottom: .8rem;
